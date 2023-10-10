@@ -23,5 +23,9 @@
     "url": "https://github.com/AlmiranteFuchs/wdip/issues"
   },
   "homepage": "https://github.com/AlmiranteFuchs/wdip#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "got": "^11.8.6"
+  }
 }

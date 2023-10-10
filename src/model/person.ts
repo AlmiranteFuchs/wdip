@@ -1,13 +1,19 @@
-import { Places } from "../publicInterfaces";
+import { Places, UserAdvancedInfo, UserBasicInfo, UserIDInfo } from "../publicInterfaces";
 
 // person class
-export class Person {
+export class Person implements UserBasicInfo, UserIDInfo, UserAdvancedInfo{
+    // Identifier info
+    public cpf: number | null = null;    // CPF
+    public rg: number | null = null;     // RG
+    public cnh: number | null = null;    // CNH
+    public cnpj: number | null = null;   // CNPJ
+
     // Basic info
-    public name: string[] = [];          // List of possible names
-    public age: number[] = [];           // List of possible ages
-    public email: string[] = [];         // List of possible emails
-    public phone: string[] = [];         // List of possible phones
-    public address: string[] = [];        // List of possible addresses
+    public name: string[] = [];
+    public age: number[] = [];
+    public email: string[] = [];
+    public phone: string[] = [];
+    public address: string[] = [];
 
     // TODO: Family info
 
